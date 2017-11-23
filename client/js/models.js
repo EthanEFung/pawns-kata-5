@@ -1,4 +1,3 @@
-//todo: create models
 class Game {
   constructor(n) {
     this.board = this.initializeBoard(n);

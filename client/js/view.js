@@ -1,17 +1,5 @@
-//todo: create view
 function renderView(board) {
-  let $board;
-  if (document.getElementById("board")) {
-    $board = document.getElementById("board");
-    while ($board.firstChild) {
-      $board.removeChild($board.firstChild);
-    }
-  } else {
-    $board = document.createElement("tbody");
-    $board.setAttribute("id", "board");
-    document.body.appendChild($board);
-  }
-
+  let $board = createBoardController(board);
   for (let row of board) {
     const $row = createRowController(row);
     for (let sq of row) {
@@ -24,10 +12,11 @@ function renderView(board) {
     }
     $board.appendChild($row);
   }
+  //$board has been appended to the dom body
 }
 
 window.onload = () => {
-  const game = new Game(3);
+  const game = new Game(8);
   game.initializeGame();
   renderView(game.board);
 };
