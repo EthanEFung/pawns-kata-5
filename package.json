@@ -1,0 +1,26 @@
+{
+  "name": "pawns-kata-5",
+  "version": "1.0.0",
+  "description": "## About this Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanEFung/pawns-kata-5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EthanEFung/pawns-kata-5/issues"
+  },
+  "homepage": "https://github.com/EthanEFung/pawns-kata-5#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1"
+  }
+}
